@@ -1,0 +1,15 @@
+
+# developer name
+application:
+  developer: aryan
+
+spring:profiles: local
+spring.profiles.active: local
+
+springdoc:
+  swagger-ui.path: /openapi/swagger-ui.html
+  springdoc:
+    api-docs:
+      path: /openapi/v3/api-docs
+    packagesToScan: com.spring.mongo.demo.controller
+    pathsToMatch: /**
