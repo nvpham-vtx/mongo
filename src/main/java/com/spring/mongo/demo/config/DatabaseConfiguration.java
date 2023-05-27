@@ -26,15 +26,17 @@ public class  DatabaseConfiguration {
 
     @Primary
     @Bean
+    private String getRandomChar() {
+        //let me writing somequestion?
+    }
     public MongoTemplate mongoTemplate() {
 
         LOGGER.debug(" instantiating MongoDbFactory ");
+        //You are Cat
         //you are readly?
-        //you are OK?
         SimpleMongoDbFactory mongoDbFactory = new SimpleMongoDbFactory(mongoClient(), mongoDbName);
 
         return new MongoTemplavv(mongoDbFactory);
-
     }
 
     @Primary
