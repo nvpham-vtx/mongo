@@ -29,7 +29,7 @@ public class  DatabaseConfiguration {
    public MongoTemplate mongoTemplate() {
         //master 1
        LOGGER.debug(" instantiating MongoDbFactory ");
-
+//master 2
        SimpleMongoDbFactory mongoDbFactory = new SimpleMongoDbFactory(mongoClient(), mongoDbName);
 
        return new MongoTemplate(mongoDbFactory);
