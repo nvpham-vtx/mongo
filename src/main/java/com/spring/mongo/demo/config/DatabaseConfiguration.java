@@ -33,7 +33,7 @@ public class  DatabaseConfiguration {
        SimpleMongoDbFactory mongoDbFactory = new SimpleMongoDbFactory(mongoClient(), mongoDbName);
 
        return new MongoTemplate(mongoDbFactory);
-
+//F2
    }
 
    @Primary
