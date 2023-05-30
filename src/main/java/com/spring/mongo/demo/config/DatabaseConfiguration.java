@@ -31,7 +31,7 @@ public class  DatabaseConfiguration {
        LOGGER.debug(" instantiating MongoDbFactory ");
 
        SimpleMongoDbFactory mongoDbFactory = new SimpleMongoDbFactory(mongoClient(), mongoDbName);
-
+//F3
        return new MongoTemplate(mongoDbFactory);
 //F2
    }
