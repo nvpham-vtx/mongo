@@ -48,7 +48,7 @@ public class  DatabaseConfiguration {
    public MongoClientURI mongoClientURI() {
        LOGGER.debug(" creating connection with mongodb with uri [{}] ", mongoUri);
        //D2 return new MongoClientURI(mongoUri);
-
+        //D3
        MongoClientOptions.Builder options = MongoClientOptions.builder();
        options.socketKeepAlive(true);
        return new MongoClientURI(mongoUri, options);
